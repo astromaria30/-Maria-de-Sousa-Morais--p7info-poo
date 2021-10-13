@@ -1,0 +1,26 @@
+class Pilha:
+    def _init_(self):
+        self.num = list()
+
+    def add_num(self, new_num):
+        self.num.append(new_num)
+
+    def pop_num(self):
+        del self.num[-1]
+
+    def show_pilha(self):
+        print(*self.num)
+
+pilha_inicial = Pilha()
+pilha_inicial.add_num(10)
+pilha_inicial.add_num(12)
+pilha_inicial.add_num(13)
+pilha_inicial.add_num(14)
+pilha_inicial.add_num(15)
+pilha_inicial.add_num(16)
+
+print("Pilha inicial:")
+pilha_inicial.show_pilha()
+print("Pilha sem o último elemento:")
+pilha_inicial.pop_num()
+pilha_inicial.show_pilha()
