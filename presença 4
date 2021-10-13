@@ -1,0 +1,26 @@
+class Fila:
+    def _init_(self):
+        self.num = list()
+
+    def add_num(self, elemento_novo):
+        self.num.append(elemento_novo)
+
+    def pop_num(self):
+        del self.num[0]
+
+    def show_fila(self):
+        print(*self.num)
+
+fila_01 = Fila()
+fila_01.add_num(23)
+fila_01.add_num(24)
+fila_01.add_num(25)
+fila_01.add_num(26)
+fila_01.add_num(27)
+fila_01.add_num(28)
+
+print("Fila inicial: ")
+fila_01.show_fila()
+print("Fila com o primeiro elemento removido:")
+fila_01.pop_num()
+fila_01.show_fila()
